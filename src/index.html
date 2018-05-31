@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Send MyTokens</title>
+        <style type="text/css">
+            .loader {
+                border: 8px solid #f3f3f3;
+                border-top: 8px solid #005490;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                margin: auto;
+                animation: spin 0.5s linear infinite;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            #center {
+                position: absolute;
+                display: table;
+                margin: auto;
+                top: -20%;
+                left: 50%;
+                bottom: 0;
+                right: 0;
+                transform: translateX(-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root">
+            <div id="center">
+                <div class='loader'></div>
+            </div>
+        </div>
+        <script src="./bundle.js"></script>
+    </body>
+</html>
